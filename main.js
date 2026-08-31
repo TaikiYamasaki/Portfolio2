@@ -19,7 +19,10 @@ const IMAGES = {
   Portfolio1: "img/portfolio1.png",
   kadai: "img/saiyou.png",
   work2: "img/work2.png",
-  work1: "img/work1.png"
+  work1: "img/work1.png",
+  MyTasks_Claude: "img/MyTasks.png",
+  todo_list: "img/TOdo.png",
+  work_React: "img/Quiz.png"
 };
 
 const WORKS = [
