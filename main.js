@@ -73,7 +73,7 @@ function render() {
   gridEl.innerHTML = "";
   WORKS
     .filter(w => filter === "all" || w[4].indexOf(filter) !== -1)
-    .forEach(w => {
+    .forEach((w, i) => {
       const [id, cat, title, band, , url] = w;
       const ph = title;
 
@@ -81,7 +81,8 @@ function render() {
       card.href = url;
       card.target = "_blank";
       card.rel = "noopener";
-      card.className = "work-card";
+      card.className = "work-card reveal";
+      card.style.transitionDelay = (i % 4) * 0.08 + "s";
 
       const thumb = document.createElement("div");
       thumb.className = "work-thumb";
@@ -120,6 +121,21 @@ function render() {
       card.appendChild(titleEl);
       gridEl.appendChild(card);
     });
+
+  observeReveals();
+}
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
+
+function observeReveals() {
+  document.querySelectorAll(".reveal:not(.is-visible)").forEach(el => revealObserver.observe(el));
 }
 
 render();
