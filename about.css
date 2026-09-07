@@ -32,7 +32,7 @@ nav a.active { border-bottom-color: #1a1a1a; }
   box-shadow: 0 30px 60px rgba(60, 48, 30, 0.08);
   padding: 48px;
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 1fr 320px;
   gap: 56px;
   align-items: start;
 }
@@ -43,20 +43,28 @@ nav a.active { border-bottom-color: #1a1a1a; }
   border-radius: 16px;
   background: #eeebe4;
   border: 1px solid #e4e0d7;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; flex-direction: column; justify-content: center;
   overflow: visible;
+  padding: 36px 30px;
 }
-.profile-photo .slot-label { color: #a29b8c; }
+.hobby-heading {
+  margin: 0 0 26px;
+  font-family: Jost, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.3em; color: #8d877d;
+}
+.hobby-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+.hobby-list li { display: flex; align-items: flex-start; gap: 14px; }
+.hobby-icon {
+  flex: none; display: flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 50%; background: #fff; font-size: 17px;
+}
+.hobby-title { margin: 0 0 4px; font-size: 13px; font-weight: 600; color: #1a1a1a; }
+.hobby-desc { margin: 0; font-size: 11.5px; line-height: 1.7; color: #6f6a62; }
 .profile-badge {
-  position: absolute; right: -18px; bottom: -18px;
-  width: 108px; height: 108px; border-radius: 50%;
-  background: #fbe4d3; border: 1px solid #f3d3b8;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
-  text-align: center; padding: 10px;
-  font-family: Jost, sans-serif; color: #6b4a2c;
+  position: absolute; right: -24px; top: -44px;
+  width: 140px; height: 140px; border-radius: 50%;
+  overflow: hidden;
 }
-.profile-badge span:first-child { font-size: 8px; letter-spacing: 0.12em; }
-.profile-badge span:last-child { font-size: 8px; letter-spacing: 0.22em; opacity: 0.75; }
+.profile-badge img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 .profile-body h2 {
   margin: 0 0 6px;
@@ -81,6 +89,11 @@ nav a.active { border-bottom-color: #1a1a1a; }
 }
 .tool-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 32px 16px; }
 .tool-item { display: flex; flex-direction: column; align-items: center; gap: 12px; font-size: 11.5px; color: #4f4a44; }
+.tool-learning {
+  margin-top: -4px; padding: 2px 9px; border-radius: 999px;
+  background: #fbe4d3; color: #b06a2e;
+  font-family: Jost, sans-serif; font-size: 9px; letter-spacing: 0.06em;
+}
 .tool-badge {
   width: 52px; height: 52px; border-radius: 14px;
   display: flex; align-items: center; justify-content: center;
@@ -89,13 +102,13 @@ nav a.active { border-bottom-color: #1a1a1a; }
 }
 .tool-badge-light { background: #fff; color: #1a1a1a; border: 1px solid #e4ded0; }
 .tool-figma { background: linear-gradient(135deg, #0acf83, #a259ff); }
-.tool-xd { background: #470137; }
-.tool-ps { background: #001e36; }
-.tool-ai { background: #330000; }
-.tool-canva { background: linear-gradient(135deg, #00c4cc, #7d2ae8); }
 .tool-vscode { background: #007acc; font-size: 12px; }
-.tool-slack { background: #4a154b; }
-.tool-google { color: #4285f4; }
+.tool-html { background: #e34c26; }
+.tool-css { background: #2965f1; }
+.tool-js { background: #f0db4f; color: #1a1a1a; font-size: 13px; }
+.tool-ts { background: #3178c6; font-size: 13px; }
+.tool-react { background: #20232a; color: #61dafb; font-size: 22px; }
+.tool-github { color: #1a1a1a; font-size: 13px; }
 
 /* Work process */
 .process-list { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; position: relative; }
