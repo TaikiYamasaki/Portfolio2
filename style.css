@@ -1,7 +1,9 @@
 :root { color-scheme: light; }
 * { box-sizing: border-box; }
+html { overflow-x: hidden; }
 body {
   margin: 0;
+  overflow-x: hidden;
   background: #f7f5f1 url("img/背景.png") center / cover no-repeat fixed;
   color: #1a1a1a;
   font-family: "Zen Kaku Gothic New", "Jost", sans-serif;
