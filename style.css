@@ -167,11 +167,11 @@ h1 { margin: 0; font-family: Jost, sans-serif; font-size: 92px; line-height: 1.2
     gap: 30px; padding: 40px;
     background: #f7f5f1;
     box-shadow: -12px 0 30px rgba(26,26,26,0.12);
-    transform: translateX(100%);
-    transition: transform 0.35s ease;
+    clip-path: inset(0 0 0 100%);
+    transition: clip-path 0.35s ease;
   }
   nav a { font-size: 13px; }
-  header.nav-open nav { transform: translateX(0); }
+  header.nav-open nav { clip-path: inset(0 0 0 0); }
   header.nav-open .nav-toggle span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
   header.nav-open .nav-toggle span:nth-child(2) { opacity: 0; width: 0; }
   header.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
