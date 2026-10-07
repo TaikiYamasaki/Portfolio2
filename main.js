@@ -25,6 +25,25 @@ const IMAGES = {
   work_React: "img/Quiz.png"
 };
 
+const NOTES = {
+  LP5_claude: { industry: "ファストフード", type: "Webサイト / LP", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  LP4_claude: { industry: "スポーツ・アパレル", type: "Webサイト / LP", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  LP3_claude: { industry: "カフェ・飲食（コーヒー）", type: "Webサイト / LP", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  LP_2: { industry: "自動車メーカー", type: "Webサイト / LP", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  LP1_claude: { industry: "マーケティング・ブランディング", type: "Webサイト / LP", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  MyTasks_Claude: { industry: "個人開発", type: "アプリケーション", tech: "TypeScript / React", production: "自主的に制作" },
+  JavaScript_Primer_Todo: { industry: "個人開発", type: "アプリケーション", tech: "JavaScript", production: "自主的に制作" },
+  todo_list: { industry: "個人開発", type: "アプリケーション", tech: "TypeScript / React", production: "自主的に制作" },
+  "Typing-game": { industry: "個人開発", type: "アプリケーション（ゲーム）", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  omikuji: { industry: "個人開発", type: "アプリケーション", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  work3: { industry: "旅行・観光", type: "Webサイト", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  work_React: { industry: "個人開発", type: "アプリケーション（クイズ）", tech: "JavaScript / React", production: "自主的に制作" },
+  Portfolio1: { industry: "個人ポートフォリオ", type: "Webサイト", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  kadai: { industry: "コーポレート・採用", type: "Webサイト", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  work2: { industry: "インテリア・オフィスデザイン", type: "Webサイト", tech: "HTML / CSS", production: "自主的に制作" },
+  work1: { industry: "飲食店", type: "Webサイト", tech: "HTML / CSS", production: "自主的に制作" }
+};
+
 const WORKS = [
   ["LP5_claude", "JavaScript", "web", "LP5_claude", "https://taikiyamasaki.github.io/LP5_claude/"],
   ["LP4_claude", "CSS", "web", "LP4_claude", "https://taikiyamasaki.github.io/LP4_claude/"],
@@ -107,6 +126,20 @@ function render() {
         slot.innerHTML = '<span class="slot-label">' + ph + "</span>";
       }
       thumb.appendChild(slot);
+
+      const notes = NOTES[id];
+      if (notes) {
+        const overlay = document.createElement("div");
+        overlay.className = "work-overlay";
+        overlay.innerHTML =
+          '<dl>' +
+          '<dt>業種</dt><dd>' + notes.industry + '</dd>' +
+          '<dt>制作内容</dt><dd>' + notes.type + '</dd>' +
+          '<dt>使用技術</dt><dd>' + notes.tech + '</dd>' +
+          '<dt>制作</dt><dd>' + notes.production + '</dd>' +
+          '</dl>';
+        thumb.appendChild(overlay);
+      }
 
       const catEl = document.createElement("p");
       catEl.className = "work-cat";

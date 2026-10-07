@@ -79,8 +79,10 @@ nav a.active { border-bottom-color: #1a1a1a; }
   margin-top: 24px; padding-top: 24px; border-top: 1px solid #e9e4d9;
   display: flex; flex-wrap: wrap; gap: 24px;
 }
-.profile-meta span { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; color: #4f4a44; }
+.profile-meta span, .profile-meta a { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; color: #4f4a44; }
 .profile-meta svg { color: #b06a2e; flex: none; }
+.profile-meta a { transition: color 0.2s; }
+.profile-meta a:hover { color: #FCB378; }
 
 /* Tool section */
 .tool-section, .process-section, .cherish-section { max-width: 1000px; margin: 120px auto 0; padding: 0 40px; text-align: center; }
