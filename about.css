@@ -143,6 +143,10 @@ nav a.active { border-bottom-color: #1a1a1a; }
   .about-title { font-size: 44px; }
   .profile-card { grid-template-columns: 1fr; padding: 32px 24px; gap: 36px; }
   .profile-photo { max-width: 260px; margin: 0 auto; }
+  .profile-badge {
+    position: static; order: -1;
+    width: 96px; height: 96px; margin: 0 auto 20px;
+  }
   .tool-grid { grid-template-columns: repeat(3, 1fr); }
   .process-list { grid-template-columns: repeat(2, 1fr); row-gap: 36px; }
   .process-list::before { display: none; }
