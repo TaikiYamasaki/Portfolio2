@@ -140,7 +140,7 @@ nav a.active { border-bottom-color: #1a1a1a; }
 #contact { margin-top: 120px; }
 
 @media (max-width: 900px) {
-  .about-hero { padding: 100px 24px 60px; }
+  .about-hero { padding: 150px 24px 60px; }
   .about-title { font-size: 44px; }
   .profile-card { display: flex; flex-direction: column; padding: 32px 24px; gap: 36px; }
   .profile-photo { max-width: 260px; aspect-ratio: auto; margin: 0 auto; }
