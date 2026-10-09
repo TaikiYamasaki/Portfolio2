@@ -181,7 +181,7 @@ nav a.active { border-bottom-color: #1a1a1a; }
 #contact { margin-top: 100px; }
 
 @media (max-width: 900px) {
-  .contact-hero { height: auto; padding: 80px 0 60px; }
+  .contact-hero { height: auto; padding: 130px 0 60px; }
   .contact-title { font-size: 44px; }
   .contact-card { grid-template-columns: 1fr; padding: 36px 24px; gap: 44px; }
   .contact-col { min-width: 0; }
