@@ -133,10 +133,10 @@ function render() {
         overlay.className = "work-overlay";
         overlay.innerHTML =
           '<dl>' +
-          '<dt>業種</dt><dd>' + notes.industry + '</dd>' +
-          '<dt>制作内容</dt><dd>' + notes.type + '</dd>' +
-          '<dt>使用技術</dt><dd>' + notes.tech + '</dd>' +
-          '<dt>制作</dt><dd>' + notes.production + '</dd>' +
+          '<div><dt>業種</dt><dd>' + notes.industry + '</dd></div>' +
+          '<div><dt>制作内容</dt><dd>' + notes.type + '</dd></div>' +
+          '<div><dt>使用技術</dt><dd>' + notes.tech + '</dd></div>' +
+          '<div><dt>制作</dt><dd>' + notes.production + '</dd></div>' +
           '</dl>';
         thumb.appendChild(overlay);
       }
