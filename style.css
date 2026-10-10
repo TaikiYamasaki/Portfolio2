@@ -9,6 +9,9 @@ body {
   font-family: "Zen Kaku Gothic New", "Jost", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+@media (max-width: 980px) {
+  body { background-image: url("img/スマホ表示.png"); }
+}
 a { color: #1a1a1a; text-decoration: none; }
 a:hover { color: #6b6b6b; }
 
