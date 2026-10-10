@@ -9,19 +9,8 @@ body {
   font-family: "Zen Kaku Gothic New", "Jost", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-.mobile-bg { display: none; }
 @media (max-width: 980px) {
-  body { background-image: none; }
-  .mobile-bg {
-    display: block;
-    position: fixed; top: 0; left: 0; right: 0; z-index: -1;
-    height: 100vh;
-    height: 100svh;
-    background: url("img/スマホ表示.png?v=3") center / cover no-repeat;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    will-change: transform;
-  }
+  body { background: #FCEFD9; }
 }
 a { color: #1a1a1a; text-decoration: none; }
 a:hover { color: #6b6b6b; }
