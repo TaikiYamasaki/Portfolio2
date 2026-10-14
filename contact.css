@@ -22,6 +22,7 @@ nav a.active { border-bottom-color: #1a1a1a; }
 }
 .contact-hero-sub {
   margin: 0; font-size: 12.5px; line-height: 1.9; color: #5c574f; letter-spacing: 0.03em;
+  word-break: keep-all; overflow-wrap: break-word;
 }
 
 .recommend-box {
@@ -71,7 +72,7 @@ nav a.active { border-bottom-color: #1a1a1a; }
   font-family: Jost, sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.24em;
 }
 .mini-rule { display: block; width: 36px; height: 2px; background: #FCB378; margin-bottom: 18px; }
-.col-desc { margin: 0 0 30px; font-size: 12.5px; color: #6f6a62; letter-spacing: 0.02em; }
+.col-desc { margin: 0 0 30px; font-size: 12.5px; color: #6f6a62; letter-spacing: 0.02em; word-break: keep-all; overflow-wrap: break-word; }
 
 /* Form */
 #contact-form { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
@@ -159,7 +160,7 @@ nav a.active { border-bottom-color: #1a1a1a; }
   transition: max-height 0.3s ease, padding 0.3s ease;
   padding: 0 24px;
 }
-.faq-answer p { margin: 0 0 20px; font-size: 12.5px; line-height: 1.9; color: #5c574f; }
+.faq-answer p { margin: 0 0 20px; font-size: 12.5px; line-height: 1.9; color: #5c574f; word-break: keep-all; overflow-wrap: break-word; }
 .price-plans { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 20px; }
 .price-plan { background: #fff; border: 1px solid #e4ded0; border-radius: 12px; padding: 16px 18px; }
 .price-plan-title {
