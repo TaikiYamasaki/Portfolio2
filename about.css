@@ -117,13 +117,13 @@ nav a.active { border-bottom-color: #1a1a1a; }
 .tool-github { color: #1a1a1a; font-size: 13px; }
 
 /* Work process */
-.process-list { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; position: relative; }
+.process-list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; position: relative; }
 .process-list::before {
   content: ""; position: absolute; top: 26px; left: 10%; right: 10%; height: 1px;
   background-image: linear-gradient(to right, #d8d1c2 50%, transparent 0%);
   background-size: 10px 1px; background-repeat: repeat-x;
 }
-.process-item { position: relative; padding: 0 8px; }
+.process-item { position: relative; padding: 0 8px; min-width: 0; }
 .process-icon {
   position: relative; z-index: 1;
   width: 52px; height: 52px; margin: 0 auto 16px; border-radius: 50%;
@@ -152,13 +152,13 @@ nav a.active { border-bottom-color: #1a1a1a; }
     width: 96px; height: 96px; margin: 0 auto 20px;
   }
   .tool-grid { grid-template-columns: repeat(3, 1fr); }
-  .process-list { grid-template-columns: repeat(2, 1fr); row-gap: 36px; }
+  .process-list { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 36px; }
   .process-list::before { display: none; }
   .cherish-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 560px) {
   .about-title { font-size: 32px; }
   .tool-grid { grid-template-columns: repeat(2, 1fr); }
-  .process-list { grid-template-columns: 1fr; }
+  .process-list { grid-template-columns: minmax(0, 1fr); }
   .cherish-grid { grid-template-columns: 1fr; }
 }
