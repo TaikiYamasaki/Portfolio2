@@ -25,11 +25,11 @@ const IMAGES = {
 };
 
 const NOTES = {
-  LP5_claude: { industry: "ファストフード", type: "Webサイト / LP", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
-  LP4_claude: { industry: "スポーツ・アパレル", type: "Webサイト / LP", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
-  LP3_claude: { industry: "カフェ・飲食（コーヒー）", type: "Webサイト / LP", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
-  LP_2: { industry: "自動車メーカー", type: "Webサイト / LP", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
-  LP1_claude: { industry: "マーケティング・ブランディング", type: "Webサイト / LP", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  LP5_claude: { industry: "ファストフード", type: "Webサイト / TOPページ制作例", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  LP4_claude: { industry: "スポーツ・アパレル", type: "Webサイト / TOPページ制作例", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  LP3_claude: { industry: "カフェ・飲食（コーヒー）", type: "Webサイト / TOPページ制作例", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  LP_2: { industry: "自動車メーカー", type: "Webサイト / TOPページ制作例", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
+  LP1_claude: { industry: "マーケティング・ブランディング", type: "Webサイト / TOPページ制作例", tech: "HTML / CSS / JavaScript", production: "自主的に制作" },
   MyTasks_Claude: { industry: "個人開発", type: "アプリケーション", tech: "TypeScript / React", production: "自主的に制作" },
   JavaScript_Primer_Todo: { industry: "個人開発", type: "アプリケーション", tech: "JavaScript", production: "自主的に制作" },
   todo_list: { industry: "個人開発", type: "アプリケーション", tech: "TypeScript / React", production: "自主的に制作" },
